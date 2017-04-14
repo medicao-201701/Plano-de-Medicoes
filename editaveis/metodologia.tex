@@ -5,25 +5,25 @@
 
 \section{M.1.1.2 - Code Smells} % Stylesheet
 
-	\begin{tabular}{ |p{5cm}|p{5cm}|  }
+	\begin{tabular}{ |p{4cm}|p{8cm}|  }
 	 \hline
-	 Objetivo da Medição 		& 	   \\
+	 Objetivo da Medição 		& 	 Assegurar legibilidade do código  \\
 	 \hline
-	 Fórmula		& 		\\
+	 Fórmula		& 	Não se aplica	\\
 	 \hline
-	 Escala da Medição 		& 		 \\
+	 Escala da Medição 		& 	Absoluta	 \\
 	 \hline
-	 Coleta		& 		\\
+	 Coleta		& 	\begin{itemize} \item Responsável: Equipe de medição \item Periodicidade: a cada marco da disciplina \item Procedimento: Será utilizado da ferramenta cLint para realizar a análise estática nos métodos, para detectar métodos e lista de parâmetros longos. \end{itemize} \\
 	 \hline
-	 Análise		& 		 \\
+	 Análise		& 	\begin{itemize} \item Responsável: Equipe de medição \item Procedimentos: Quanto maior o número de bad smells, pior a legibilidade do código \end{itemize} 	 \\
 	 \hline
-	 Meta		& 		 \\
+	 Meta		& 	BadSmells <= 10	 \\
 	 \hline
 	\end{tabular}
 
 \section{M.1.2.1 - Complexidade NPath}
 
-	\begin{tabular}{ |p{5cm}|p{5cm}|  }
+	\begin{tabular}{ |p{4cm}|p{8cm}|  }
 	 \hline
 	 Objetivo da Medição 		& 	  Garantir que o código tenha a menor complexidade possível em caso de necessidade de manutenção. \\
 	 \hline
@@ -43,109 +43,109 @@
 
 \section{M.1.3.1 - Duplicação de código} 
 
-	\begin{tabular}{ |p{5cm}|p{5cm}|  }
+	\begin{tabular}{ |p{4cm}|p{8cm}|  }
 	 \hline
-	 Objetivo da Medição 		& 	   \\
+	 Objetivo da Medição 		& 	Assegurar a não repetição de código já criado em outros módulos, de forma que facilite a manutenção.   \\
 	 \hline
-	 Fórmula		& 		\\
+	 Fórmula		& 	Quantidade de linhas de código duplicado / Quantidade total de linhas de código	\\
 	 \hline
-	 Escala da Medição 		& 		 \\
+	 Escala da Medição 		& Absoluta		 \\
 	 \hline
-	 Coleta		& 		\\
+	 Coleta		& 	\begin{itemize} \item Responsável: Equipe de medição \item Periodicidade: a cada marco da disciplina \item Procedimento: Será utilizado da ferramenta Simian para realizar a análise estática nos arquivos, para detectar a duplicação de código.\end{itemize}	\\
 	 \hline
-	 Análise		& 		 \\
+	 Análise		& 	\begin{itemize} \item Responsável: Equipe de medição \item Procedimentos: Quanto mais duplicação, mais tempo será necessário para dar manutenção em funções. \end{itemize}	 \\
 	 \hline
-	 Meta		& 		 \\
+	 Meta		& 	Duplicidade <= 10\%	 \\
 	 \hline
 	\end{tabular}
 
 \section{M.2.1.1 - Horas trabalhadas} % Dedicação
 
-	\begin{tabular}{ |p{5cm}|p{5cm}|  }
+	\begin{tabular}{ |p{4cm}|p{8cm}|  }
 	 \hline
-	 Objetivo da Medição 		& https://dev9.com/blog-posts/2015/1/the-myth-of-developer-productivity 	   \\
+	 Objetivo da Medição 		& Determinar a quantidade de tempo em que cada integrante se dedicou por marco.	   \\ % https://dev9.com/blog-posts/2015/1/the-myth-of-developer-productivity 
 	 \hline
-	 Fórmula		& 		\\
+	 Fórmula		&  Somatório da quantidade de horas	\\
 	 \hline
-	 Escala da Medição 		& 		 \\
+	 Escala da Medição 		& Absoluta		 \\
 	 \hline
-	 Coleta		& 		\\
+	 Coleta		& 	\begin{itemize} \item Responsável: Equipe de medição \item Periodicidade: a cada marco da disciplina \item Procedimento: Será utilizado da ferramenta WakaTime para realizar a análise de quantas horas o integrante trabalhou por semana, e a equipe realizará o somatório do intervalo entre os marcos.\end{itemize}	\\
 	 \hline
-	 Análise		& 		 \\
+	 Análise		& 	\begin{itemize} \item Responsável: Equipe de medição \item Procedimentos: Quanto mais horas trabalhadas, maior a dedicação. \end{itemize}	 \\
 	 \hline
-	 Meta		& 		 \\
+	 Meta		& 	6 horas por semana	 \\
 	 \hline
 	\end{tabular}
 
 	\section{M.2.1.1 - Evolucao de conhecimento} % Dedicação
 
-	\begin{tabular}{ |p{5cm}|p{5cm}|  }
+	\begin{tabular}{ |p{4cm}|p{8cm}|  }
 	 \hline
 	 Objetivo da Medição 		& Verificar conhecimento adquirido entre os marcos	   \\
 	 \hline
-	 Fórmula		& 		\\
+	 Fórmula		& 	Não se aplica	\\
 	 \hline
-	 Escala da Medição 		& 		 \\
+	 Escala da Medição 		& 	Ordinal	 \\
 	 \hline
-	 Coleta		& 		\\
+	 Coleta		& 	\begin{itemize} \item Responsável: Equipe de medição \item Periodicidade: a cada marco da disciplina \item Procedimento: Será utilizado um questionário para que os desenvolvedores opinem sobre o quanto estão familiarizados com as tecnologias e o processo de desenvolvimento. \end{itemize}		\\
 	 \hline
-	 Análise		& 		 \\
+	 Análise		& 	\begin{itemize} \item Responsável: Equipe de medição \item Procedimentos: De um valor inteiro de 1 a 5, quanto maior o número, mais o desenvolvedor se diz familiarizado. \end{itemize}	 \\
 	 \hline
-	 Meta		& 		 \\
+	 Meta		& 	Conhecimento dos desenvolvedores em cada tecnologia >= 4	 \\
 	 \hline
 	\end{tabular}
 
-	\section{M.2.1.1 - Active days} % Dedicação
+	%\section{M.2.1.1 - Active days} % Dedicação
 
-	\begin{tabular}{ |p{5cm}|p{5cm}|  }
-	 \hline
-	 Objetivo da Medição 		& Verificar conhecimento adquirido entre os marcos	   \\
-	 \hline
-	 Fórmula		& 		https://blog.gitprime.com/5-developer-metrics-every-software-manager-should-care-about\\
-	 \hline
-	 Escala da Medição 		& 		 \\
-	 \hline
-	 Coleta		& 		\\
-	 \hline
-	 Análise		& 		 \\
-	 \hline
-	 Meta		& 		 \\
-	 \hline
-	\end{tabular}
+	%\begin{tabular}{ |p{5cm}|p{5cm}|  }
+	% \hline
+	% Objetivo da Medição 		&    \\
+	% \hline
+	% Fórmula		& 	Número de commits por dia	\\ % https://%blog.gitprime.com/5-developer-metrics-every-software-manager-should-care-about
+	% \hline
+	% Escala da Medição 		& 		 \\
+	% \hline
+	% Coleta		& 		\\
+	% \hline
+	% Análise		& 		 \\
+	% \hline
+	% Meta		& 		 \\
+	% \hline
+	%\end{tabular}
 
 \section{M.3.1.1 - Eficiência da equipe - Accuracy of Estimation} % Eficiencia para produzir artefatos
 
-	\begin{tabular}{ |p{5cm}|p{5cm}|  }
+	\begin{tabular}{ |p{4cm}|p{8cm}|  }
 	 \hline
-	 Objetivo da Medição 		& https://dev9.com/blog-posts/2015/1/the-myth-of-developer-productivity  	   \\
+	 Objetivo da Medição 		&  	 Avaliar a capacidade da equipe em entregar os artefatos estipulados pelo docente.  \\ % https://dev9.com/blog-posts/2015/1/the-myth-of-developer-productivity 
 	 \hline
-	 Fórmula		& 		\\
+	 Fórmula		& 	Quantidade de tempo definido - Quantidade de tempo gasta	\\
 	 \hline
-	 Escala da Medição 		& 		 \\
+	 Escala da Medição 		& 	Racional	 \\
 	 \hline
-	 Coleta		& 		\\
+	 Coleta		& 	\begin{itemize} \item Responsável: Equipe de medição \item Periodicidade: a cada marco da disciplina \item Procedimento: Após o início de cada marco, estipular o tempo de cada tarefa e aferir o tempo de conclusão das mesmas. \end{itemize}	\\
 	 \hline
-	 Análise		& 		 \\
+	 Análise		& 	\begin{itemize} \item Responsável: Equipe de medição \item Procedimentos: Se o valor for positivo, a eficiência está boa, caso seja negativa, o time precisa se esforçar mais. \end{itemize}	 \\
 	 \hline
-	 Meta		& 		 \\
-	 \hline
-	\end{tabular}
-
-
-\section{M.3.2.1 - Estimativa de entrega} % A estimativa de entrega de artefato corresponde com a atual taxa de entrega dos artefatos
-
-	\begin{tabular}{ |p{5cm}|p{5cm}|  }
-	 \hline
-	 Objetivo da Medição 		& Linhas de código (LOC)	   \\
-	 \hline
-	 Fórmula		& 		\\
-	 \hline
-	 Escala da Medição 		& 		 \\
-	 \hline
-	 Coleta		& 		\\
-	 \hline
-	 Análise		& Número de linhas de código entregue, desconsiderando linhas em branco e comentários \\
-	 \hline
-	 Meta		& 		 \\
+	 Meta		& 	Eficiência >= 0	 \\
 	 \hline
 	\end{tabular}
+
+
+%\section{M.3.2.1 - Estimativa de entrega} % A estimativa de entrega de artefato corresponde com a atual taxa de entrega dos artefatos?
+
+%	\begin{tabular}{ |p{5cm}|p{5cm}|  }
+%	 \hline
+%	 Objetivo da Medição 		& 	   \\
+%	 \hline
+%	 Fórmula		& 		\\
+%	 \hline
+%	 Escala da Medição 		& 		 \\
+%	 \hline
+%	 Coleta		& 		\\
+%	 \hline
+%	 Análise		&  \\
+%	 \hline
+%	 Meta		& 		 \\
+%	 \hline
+%	\end{tabular}

@@ -1,0 +1,104 @@
+\chapter{Indicadores}
+
+Uma maneira simples de facilitar a representação de uma métrica para facilitar a compreensão quando comparada a uma referência é um indicador. O indicador consiste em uma representação de um conjunto de medidas em uma maneira específica fornecendo informações úteis para indicar como atingir os objetivos de medição.
+
+\subsection{Qualidade de Código}
+
+   \begin{tabular}{ |p{3cm}|p{12cm}| }
+   \hline
+    \textbf{Objetivo} & Analisar a evolução de qualidade de código do projeto. \\
+   \hline
+    \textbf{Fórmula} & QC = $\frac{n}{\sum_{i=1}^{i=n} C_i}$ + $\frac{DC + \frac{1}{BS + 1}}{2}$ \begin{itemize}
+			\item n = Número de métodos totais
+			\item C$_i$ = Complexidade NPath no método \textit{i}
+			\item DC = Taxa de duplicação de código
+			\item BS = Número de incidências de BadSmells no código
+		\end{itemize}\\
+   \hline
+    \textbf{Escala} & Racional \\
+   \hline
+    \textbf{Coleta} & \begin{itemize}
+		 \item \textbf{Responsável}: Equipe de medição
+     \item \textbf{Periodicidade}: A cada entrega no final de cada marco.
+     \item \textbf{Procedimentos}: Colhimento das métricas envolvidas e analise da evolução do código ao longo do tempo.
+    \end{itemize} \\
+   \hline
+    \textbf{Análise} & \begin{itemize} \item \textbf{Responsável}: Equipe de medição
+    \item \textbf{Procedimentos}: Depois de colher as métricas com auxílios de ferramentas será obtido um QC através do cálculo de acordo com a fórmula proposta, é descrito uma grandeza qualitativa para esse valor de acordo com os intervalos descritos abaixo:
+		 \subitem Ótimo se QC >= 0.7
+		 \subitem Razoável se QC >= 0.5 e QC < 0.7
+		 \subitem Ruim se QC > 0.1 e QC < 0.5
+		 \subitem Insuficiente se QC = 0.0
+	\item \textbf{Apresentação}: O indicador estará na wiki do projeto de medição, descrevendo como foi obtida a análise através da métrica, também estará disponível um gráfico com o indicador obtido a cada entrega de cada marco.
+	\end{itemize} \\
+  \hline
+	 \textbf{Meta} & Ótimo \\
+   \hline
+
+\end{tabular}
+
+\subsection{Qualidade de equipe}
+
+	\begin{tabular}{ |p{3cm}|p{12cm}| }
+		\hline
+		\textbf{Objetivo} & Analisar a qualidade da equipe considerando sua eficiência. \\
+		\hline
+		\textbf{Fórmula} & QE = $\frac{\sum_{i=1}^{i=n}P_i}{H}$ \begin{itemize}
+  		\item n = número de artefatos entregues 
+	  	\item $P_i$ = Pontuação do artefato entregue i
+		\item H = Horas totais trabalhadas pela equipe
+		\end{itemize}\\
+		\hline
+		\textbf{Escala} & Racional \\
+		\hline
+    	\textbf{Coleta} & \begin{itemize}
+		 \item \textbf{Responsável}: Equipe de medição
+    	 \item \textbf{Periodicidade}: Ao fim de cada iteração
+                                                                                                                                \item \textbf{Procedimentos}: Colhimento das métricas envolvidas e analise da qualidade e eficiência da equipe.
+		\end{itemize} \\
+		\hline
+		\textbf{Análise} & \begin{itemize}
+			\item \textbf{Responsável}: Equipe de medição
+			\item \textbf{Procedimentos}: Após colher as métricas com o auxílio da ferramenta de gerência do projeto e a ferramenta que auxilia a contabilização de horas trabalhadas no projeto será obtido um \textit{QE} através de acordo com a fórmula proposta, foram definidos também indicadores classificatórios obedecendo intervalos da métrica proposta.
+				\subitem Ótimo se QE >= 1.0
+				\subitem Razoável se QE >= 0.5 e QE < 1.0
+				\subitem Ruim se QE > 0.0 e QE < 0.5
+				\subitem Insuficiente se QE = 0.0
+		\end{itemize} \\
+		\hline
+		\textbf{Apresentação} & O indicador estará na wiki do projeto de medição, descrevendo como foi obtida a análise através da métrica, também estará disponível um gráfico com o indicador obtido a cada entrega de cada iteração. \\
+		\hline
+		\textbf{Meta} & Ótimo \\
+		\hline
+	\end{tabular}
+
+\subsection{Evolução do Conhecimento}
+
+	\begin{tabular}{ |p{3cm}|p{12cm}| }      
+	 \hline
+    \textbf{Objetivo} & Analisar a evolução de qualidade de conhecimento dos desenvolvedores. \\
+   \hline
+    \textbf{Fórmula} & TEC = $EC_i - EC_(i-1)$ \begin{itemize}
+			\item $EC_i$ Evolução do conhecimento da equipe na iteração i
+		\end{itemize}\\
+   \hline
+    \textbf{Escala} & Racional \\
+   \hline
+    \textbf{Coleta} & \begin{itemize}
+		 \item \textbf{Responsável}: Equipe de medição
+     \item \textbf{Periodicidade}: A cada entrega no final de cada marco.
+     \item \textbf{Procedimentos}: Colhimento das métricas envolvidas e analise da evolução do código ao longo do tempo.
+    \end{itemize} \\
+   \hline
+    \textbf{Análise} & \begin{itemize} \item \textbf{Responsável}: Equipe de medição
+    \item \textbf{Procedimentos}: Depois de colher as métricas EC através do cálculo de acordo com a fórmula proposta, é descrito uma grandeza qualitativa para esse valor de acordo com os intervalos descritos abaixo:
+		 \subitem Ótimo se  >= 1.0
+		 \subitem Razoável se QC >= 0.5 e QC < 0.7
+		 \subitem Ruim se QC < 0.5
+	\item \textbf{Apresentação}: O indicador estará na wiki do projeto de medição, descrevendo como foi obtida a análise através da métrica, também estará disponível um gráfico com o indicador obtido a cada entrega de cada marco.
+	\end{itemize} \\
+  \hline
+	 \textbf{Meta} & Ótimo \\
+	\hline
+
+\end{tabular}

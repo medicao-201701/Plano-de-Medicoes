@@ -15,7 +15,7 @@
 	 \hline
 	 Coleta		& 	\begin{itemize} \item Responsável: Equipe de medição \item Periodicidade: a cada marco da disciplina \item Procedimento: Será utilizado da ferramenta cLint para realizar a análise estática nos métodos, para detectar métodos e lista de parâmetros longos. \end{itemize} \\
 	 \hline
-	 Análise		& 	\begin{itemize} \item Responsável: Equipe de medição \item Procedimentos: Quanto maior o número de bad smells, pior a legibilidade do código \end{itemize} 	 \\
+	 Análise		& 	\begin{itemize} \item Responsável: Equipe de medição \item Procedimentos: Quanto maior o número de code smells, pior a legibilidade do código \end{itemize} 	 \\
 	 \hline
 	 Meta		& 	BadSmells <= 10	 \\
 	 \hline
@@ -36,7 +36,7 @@
 	 \hline
 	 Análise		& 		\begin{itemize} \item Responsável: Equipe de medição \item Procedimentos: Quanto maior a profundidade e aninhamento entre essas estruturas, mais difícil a compreensão de código, o que dificulta na manutenção e aumenta o custo da mesma. \end{itemize} \\
 	 \hline
-	 Meta		& 	1-200, complexidade aceitável. [Referência]	 \\
+	 Meta		& 	1-200, complexidade aceitável. \\
 	 \hline
 	\end{tabular}
 
@@ -47,7 +47,7 @@
 	 \hline
 	 Objetivo da Medição 		& 	Assegurar a não repetição de código já criado em outros módulos, de forma que facilite a manutenção.   \\
 	 \hline
-	 Fórmula		& 	Quantidade de linhas de código duplicado / Quantidade total de linhas de código	\\
+	 Fórmula		& 	Duplicidade = \[d / n\]	\begin{itemize} \item d = Número de linhas duplicadas \item n = Número total de linhas \end{itemize}\\
 	 \hline
 	 Escala da Medição 		& Absoluta		 \\
 	 \hline
@@ -65,7 +65,7 @@
 	 \hline
 	 Objetivo da Medição 		& Determinar a quantidade de tempo em que cada integrante se dedicou por marco.	   \\ % https://dev9.com/blog-posts/2015/1/the-myth-of-developer-productivity 
 	 \hline
-	 Fórmula		&  Somatório da quantidade de horas	\\
+	 Fórmula		&  $\sum_{i=1}^{i=n}{Hi}$	\begin{itemize} \item $H_i$ = Quantidade de horas trabalhadas por semana \end{itemize}\\
 	 \hline
 	 Escala da Medição 		& Absoluta		 \\
 	 \hline
@@ -128,7 +128,7 @@
 	 \hline
 	 Objetivo da Medição 		&  	 Avaliar a capacidade da equipe em entregar os artefatos estipulados pelo docente.  \\ % https://dev9.com/blog-posts/2015/1/the-myth-of-developer-productivity 
 	 \hline
-	 Fórmula		& 	Quantidade de tempo definido - Quantidade de tempo gasta	\\
+	 Fórmula		& 	 \[ r = TD - TG \]	\begin{itemize} \item TD = Quantidade de tempo definido \item TG = Quantidade de tempo gasto \end{itemize}\\
 	 \hline
 	 Escala da Medição 		& 	Racional	 \\
 	 \hline

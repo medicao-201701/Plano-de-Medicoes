@@ -21,6 +21,18 @@
 	 \hline
 	\end{tabular}
 
+	\subsection{Métricas de qualidade}
+
+	\begin{tabular}{ |p{4cm}|p{8cm}| }
+	\hline
+	  Dimensão 		& 	Qualidade de produto	 \\
+	 \hline
+	 Característica 		& 	Manutenibilidade	 \\
+	 \hline
+	 Sub-características 		& 	\begin{itemize}	\item Analisabilidade \item Modificabilidade \end{itemize} \\
+	 \hline
+	\end{tabular}
+
 \section{M.1.2.1 - Complexidade NPath}
 
 	\begin{tabular}{ |p{4cm}|p{8cm}|  }
@@ -32,6 +44,7 @@
 	 \hline
 	 Escala da Medição 		& 		Absoluta \\
 	 \hline
+	  
 	 Coleta		& 		\begin{itemize} \item Responsável: Equipe de medição \item Periodicidade: A cada marco \item Procedimentos: Análise com as ferramentas OCLint. A coleta da complexidade NPath analisa a profundidade das estruturas de decisão. \end{itemize} \\
 	 \hline
 	 Análise		& 		\begin{itemize} \item Responsável: Equipe de medição \item Procedimentos: Quanto maior a profundidade e aninhamento entre essas estruturas, mais difícil a compreensão de código, o que dificulta na manutenção e aumenta o custo da mesma. \end{itemize} \\
@@ -40,6 +53,17 @@
 	 \hline
 	\end{tabular}
 
+	\subsection{Métricas de qualidade}
+
+	\begin{tabular}{ |p{4cm}|p{8cm}| }
+	\hline
+		Dimensão 		& 	Qualidade de produto	 \\
+	 \hline
+	 Característica 		& 	\begin{itemize} \item Performance \item Manutenibilidade \end{itemize}	 \\
+	 \hline
+	 Sub-características 		& 	Performance: \begin{itemize}	\item Time-behaviour \end{itemize} Manutenibilidade: \begin{itemize} \item Modularidade \item Reusabilidade \item Analisabilidade \item Modificabilidade \item Testabilidade \end{itemize} \\
+	 \hline
+	\end{tabular}
 
 \section{M.1.3.1 - Duplicação de código} 
 
@@ -59,6 +83,18 @@
 	 \hline
 	\end{tabular}
 
+	\subsection{Métricas de qualidade}
+
+	\begin{tabular}{ |p{4cm}|p{8cm}| }
+		\hline
+	   Dimensão 		& 	Qualidade de produto	 \\
+	 \hline
+	 Característica 		& 	\begin{itemize} \item Adequação funcional(Functional Suitability) \end{itemize}	 \\
+	 \hline
+	 Sub-características 		& 	\begin{itemize} \item Integridade funcional (Functional completeness) \item Objetivo funcional(Functional Correctness) \end{itemize} \\
+	 \hline
+	\end{tabular}
+
 \section{M.2.1.1 - Horas trabalhadas} % Dedicação
 
 	\begin{tabular}{ |p{4cm}|p{8cm}|  }
@@ -67,7 +103,7 @@
 	 \hline
 	 Fórmula		&  $\sum_{i=1}^{i=n}{Hi}$	\begin{itemize} \item $H_i$ = Quantidade de horas trabalhadas por semana \end{itemize}\\
 	 \hline
-	 Escala da Medição 		& Absoluta		 \\
+	 Escala da Medição 		& Absoluta		 \\ 
 	 \hline
 	 Coleta		& 	\begin{itemize} \item Responsável: Equipe de medição \item Periodicidade: a cada marco da disciplina \item Procedimento: Será utilizado da ferramenta WakaTime para realizar a análise de quantas horas o integrante trabalhou por semana, e a equipe realizará o somatório do intervalo entre os marcos.\end{itemize}	\\
 	 \hline
@@ -80,6 +116,14 @@
 
 	 \hline
 	 Meta		& 	6 horas por semana	 \\
+	 \hline
+	\end{tabular}
+
+	\subsection{Métricas de qualidade}
+
+	\begin{tabular}{ |p{4cm}|p{8cm}| }
+	\hline
+	   Dimensão 		& 	Não se encaixa em qualidade de produto, nem em qualidade de uso. A métrica se aplica às pessoas envolvidas no processo e não ao software.	 \\
 	 \hline
 	\end{tabular}
 
@@ -102,11 +146,21 @@
 	 \hline
 	 Escala da Medição 		& 	Racional	 \\
 	 \hline
+	   Dimensão 		& 	Não se encaixa em qualidade de produto, nem em qualidade de uso. A métrica se aplica às pessoas envolvidas no processo e não ao software.	 \\
+	 \hline
 	 Coleta		& 	\begin{itemize} \item Responsável: Equipe de medição \item Periodicidade: a cada marco da disciplina \item Procedimento: Será utilizado um questionário para que os desenvolvedores opinem sobre o quanto estão familiarizados com as tecnologias e o processo de desenvolvimento. \end{itemize}		\\
 	 \hline
 	 Análise		& 	\begin{itemize} \item Responsável: Equipe de medição \item Procedimentos: De um valor inteiro de 1 a 5, quanto maior o número mais o desenvolvedor se diz familiarizado. \end{itemize}	 \\
 	 \hline
 	 Meta		& 	Média aritmética de conhecimento dos desenvolvedores >= 4.0	 \\
+	 \hline
+	\end{tabular}
+
+	\subsection{Métricas de qualidade}
+
+	\begin{tabular}{ |p{4cm}|p{8cm}| }
+	\hline
+	   Dimensão 		& 	Não se encaixa em qualidade de produto, nem em qualidade de uso. A métrica se aplica às pessoas envolvidas no processo e não ao software.	 \\
 	 \hline
 	\end{tabular}
 
@@ -143,6 +197,18 @@
 	 Análise		& 	\begin{itemize} \item Responsável: Equipe de medição \item Procedimentos: O valor ideal é 100\% o que implica que o time possui experiencia e que produz sempre o planejado. Valores abaixo ou acima do ideal implicam que o time não possui maturidade o suficiente e não conhece sua produtividade, portanto, não consegue seguir o planejamento esperado. \end{itemize} \\
 	 \hline
 	 Meta		& 	Eficiência >= 100\% 	 \\
+	 \hline
+	\end{tabular}
+
+	\subsection{Métricas de qualidade}
+
+	\begin{tabular}{ |p{4cm}|p{8cm}| }
+		\hline
+	   Dimensão 		& 	Qualidade de produto	 \\
+	 \hline
+	 Característica 		& 	\begin{itemize} \item Adequação funcional(Functional Suitability) \end{itemize}	 \\
+	 \hline
+	 Sub-características 		& 	\begin{itemize} \item Integridade funcional (Functional completeness) \item Objetivo funcional(Functional Correctness) \end{itemize} \\
 	 \hline
 	\end{tabular}
 

@@ -21,13 +21,13 @@
 	 \hline
 	\end{tabular}
 
-	\subsection{Métricas de qualidade}
+	\subsection{Propriedades de qualidade da métrica}
 
 	\begin{tabular}{ |p{4cm}|p{8cm}| }
 	\hline
 	  Dimensão 		& 	Qualidade de produto	 \\
 	 \hline
-	 Característica 		& 	Manutenibilidade	 \\
+	 Característica 		& 	Manutenibilidade: Os Code Smells permitem identificar partes do código onde há mau uso de sintaxe da linguagem. Esta métrica permite que esses maus usos sejam identificados, facilitando a interpretação do código para realizar manutenções. \\
 	 \hline
 	 Sub-características 		& 	\begin{itemize}	\item Analisabilidade \item Modificabilidade \end{itemize} \\
 	 \hline
@@ -53,13 +53,13 @@
 	 \hline
 	\end{tabular}
 
-	\subsection{Métricas de qualidade}
+	\subsection{Propriedades de qualidade da métrica}
 
 	\begin{tabular}{ |p{4cm}|p{8cm}| }
 	\hline
 		Dimensão 		& 	Qualidade de produto	 \\
 	 \hline
-	 Característica 		& 	\begin{itemize} \item Performance \item Manutenibilidade \end{itemize}	 \\
+	 Característica 		& 	\begin{itemize} \item Performance: a complexidade NPath pode afetar no time-behaviour pelo fato de checar a profundidade de código através dos aninhamentos de estruturas de decisão e repetição, levando a execução muitas operações em um único método, a métrica descrita acima busca reduzir ela de forma a aumentar a performance. \item Manutenibilidade: a complexidade NPath força o programador a modularizar e reduzir a complexidade de métodos muito complexos. \end{itemize}	 \\
 	 \hline
 	 Sub-características 		& 	Performance: \begin{itemize}	\item Time-behaviour \end{itemize} Manutenibilidade: \begin{itemize} \item Modularidade \item Reusabilidade \item Analisabilidade \item Modificabilidade \item Testabilidade \end{itemize} \\
 	 \hline
@@ -83,15 +83,15 @@
 	 \hline
 	\end{tabular}
 
-	\subsection{Métricas de qualidade}
+	\subsection{Propriedades de qualidade da métrica}
 
 	\begin{tabular}{ |p{4cm}|p{8cm}| }
 		\hline
 	   Dimensão 		& 	Qualidade de produto	 \\
 	 \hline
-	 Característica 		& 	\begin{itemize} \item Adequação funcional(Functional Suitability) \end{itemize}	 \\
+	 Característica 		& 	Manutenibilidade: a duplicação de código pode impactar em aspectos da manutenção de software, pois se houver muitas duplicatas, cada uma terá que ser corrigida, a coleta dessa métrica busca reduzir esse problema ao máximo de forma que se houverem erros no software, a correção fique mais fácil.	 \\
 	 \hline
-	 Sub-características 		& 	\begin{itemize} \item Integridade funcional (Functional completeness) \item Objetivo funcional(Functional Correctness) \end{itemize} \\
+	 Sub-características 		& 	\begin{itemize} \item Modularidade \item Reusabilidade \item Analisabilidade \item Modificabilidade \item Testabilidade  \end{itemize} \\
 	 \hline
 	\end{tabular}
 
@@ -119,7 +119,7 @@
 	 \hline
 	\end{tabular}
 
-	\subsection{Métricas de qualidade}
+	\subsection{Propriedades de qualidade da métrica}
 
 	\begin{tabular}{ |p{4cm}|p{8cm}| }
 	\hline
@@ -156,31 +156,13 @@
 	 \hline
 	\end{tabular}
 
-	\subsection{Métricas de qualidade}
+	\subsection{Propriedades de qualidade da métrica}
 
 	\begin{tabular}{ |p{4cm}|p{8cm}| }
 	\hline
 	   Dimensão 		& 	Não se encaixa em qualidade de produto, nem em qualidade de uso. A métrica se aplica às pessoas envolvidas no processo e não ao software.	 \\
 	 \hline
 	\end{tabular}
-
-	%\section{M.2.1.1 - Active days} % Dedicação
-
-	%\begin{tabular}{ |p{5cm}|p{5cm}|  }
-	% \hline
-	% Objetivo da Medição 		&    \\
-	% \hline
-	% Fórmula		& 	Número de commits por dia	\\ % https://%blog.gitprime.com/5-developer-metrics-every-software-manager-should-care-about
-	% \hline
-	% Escala da Medição 		& 		 \\
-	% \hline
-	% Coleta		& 		\\
-	% \hline
-	% Análise		& 		 \\
-	% \hline
-	% Meta		& 		 \\
-	% \hline
-	%\end{tabular}
 
 \section{M.3.1.1 - Porcentagem de artefatos entregues no prazo} % Eficiencia para produzir artefatos
 
@@ -200,33 +182,10 @@
 	 \hline
 	\end{tabular}
 
-	\subsection{Métricas de qualidade}
+	\subsection{Propriedades de qualidade da métrica}
 
 	\begin{tabular}{ |p{4cm}|p{8cm}| }
-		\hline
-	   Dimensão 		& 	Qualidade de produto	 \\
 	 \hline
-	 Característica 		& 	\begin{itemize} \item Adequação funcional(Functional Suitability) \end{itemize}	 \\
-	 \hline
-	 Sub-características 		& 	\begin{itemize} \item Integridade funcional (Functional completeness) \item Objetivo funcional(Functional Correctness) \end{itemize} \\
+	   Dimensão 		& 	Não se encaixa em qualidade de produto, nem em qualidade de uso. A métrica se aplica às pessoas envolvidas no processo e não ao software.	 \\
 	 \hline
 	\end{tabular}
-
-
-%\section{M.3.2.1 - Estimativa de entrega} % A estimativa de entrega de artefato corresponde com a atual taxa de entrega dos artefatos?
-
-%	\begin{tabular}{ |p{5cm}|p{5cm}|  }
-%	 \hline
-%	 Objetivo da Medição 		& 	   \\
-%	 \hline
-%	 Fórmula		& 		\\
-%	 \hline
-%	 Escala da Medição 		& 		 \\
-%	 \hline
-%	 Coleta		& 		\\
-%	 \hline
-%	 Análise		&  \\
-%	 \hline
-%	 Meta		& 		 \\
-%	 \hline
-%	\end{tabular}
